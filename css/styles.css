@@ -495,3 +495,664 @@ table tr:nth-child(2n+1) td { background: #f5f5f5; }
 	#booking p input[type=text] { width:95%; }
 	#booking p input[type=submit] { width:100%; }	
 }
+.main_header_area.white_menu .header_menu .navbar.navbar-default .nav.navbar-nav.navbar-right .book_btn .book_now_btn {
+}
+.header_menu .navbar.navbar-default .nav.navbar-nav.navbar-right .book_btn .book_now_btn {
+	background: #ffb606;
+	color: #000;
+	line-height: 34px;
+	display: inline-block;
+	padding: 0px 25px;
+	font-size: 14px;
+	font-family: "Museo300-Regular.woff", sans-serif;
+	font-weight: bold;
+	letter-spacing: .28px;
+	position: relative;
+	z-index: 2;
+	-webkit-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	border: 2px solid #ffb606;
+	margin-top: 21px;
+  }
+  
+  .header_menu .navbar.navbar-default .nav.navbar-nav.navbar-right .book_btn .book_now_btn:hover {
+	color: #ffb606;
+	background: transparent;
+  }
+  .header_menu.affix .navbar.navbar-default .nav.navbar-nav.navbar-right li.book_btn .book_now_btn {
+	margin-top: 15px;
+  }
+  
+.main_slider_area .book_table_area {
+	margin: 0px;
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	z-index: 20;
+	top: 52%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	text-align: center;
+  }
+  
+  .main_slider_area .book_table_area .book_single_one {
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .60px;
+	display: inline-block;
+	position: relative;
+	z-index: 22;
+	margin-bottom: 15px;
+  }
+  
+  .main_slider_area .book_table_area .book_single_one:before {
+	content: "";
+	width: 52px;
+	height: 1px;
+	background: #fff;
+	position: absolute;
+	left: -72px;
+	bottom: 4px;
+	opacity: 1;
+	z-index: 22;
+  }
+  
+  .main_slider_area .book_table_area .book_single_one:after {
+	content: "";
+	width: 52px;
+	height: 1px;
+	background: #fff;
+	position: absolute;
+	right: -72px;
+	bottom: 4px;
+	opacity: 1;
+	z-index: 22;
+  }
+  
+  .main_slider_area .book_table_area .book_single_text {
+	text-align: center;
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	font-size: 50px;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	padding-bottom: 65px;
+  }
+  
+  .main_slider_area .book_table_area .book_table_inner {
+	margin-top: 0px !important;
+	background: rgba(0, 0, 0, 0.34);
+	border: 1px solid #524e54;
+  }
+  
+  .main_slider_area .tp-leftarrow, .main_slider_area .tp-rightarrow {
+	z-index: 20 !important;
+  }
+  .header_menu.affix .navbar.navbar-default .nav.navbar-nav.navbar-right li.book_btn .book_now_btn {
+	margin-top: 15px;
+  }
+  .header_menu .navbar.navbar-default .nav.navbar-nav.navbar-right .book_btn .book_now_btn {
+	background: #ffb606;
+	color: #000;
+	line-height: 34px;
+	display: inline-block;
+	padding: 0px 25px;
+	font-size: 14px;
+	font-family: "Museo300-Regular.woff", sans-serif;
+	font-weight: bold;
+	letter-spacing: .28px;
+	position: relative;
+	z-index: 2;
+	-webkit-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	border: 2px solid #ffb606;
+	margin-top: 21px;
+  }
+  
+  .header_menu .navbar.navbar-default .nav.navbar-nav.navbar-right .book_btn .book_now_btn:hover {
+	color: #ffb606;
+	background: transparent;
+  }
+  .main_header_area.white_menu .header_menu .navbar.navbar-default .nav.navbar-nav.navbar-right .book_btn .book_now_btn {
+	color: #fff;
+  }
+  .header_top_logo .header_top_l_inner .h_right_text .book_now_btn {
+	color: #f5f5f5;
+	height: 38px;
+	margin-top: 3px;
+  }
+  
+  .header_top_logo .header_top_l_inner .h_right_text .book_now_btn:hover {
+	color: #fff;
+  }
+  .book_now_btn {
+	background: #08c;
+	color: #fff;
+	line-height: 36px;
+	display: inline-block;
+	padding: 0px 25px;
+	font-size: 14px;
+	font-family: "Museo 500", sans-serif;
+	font-weight: 500;
+	letter-spacing: .28px;
+	position: relative;
+	z-index: 2;
+	-webkit-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	text-align: center;
+	border: 2px solid #e5e5e5;
+	border-radius: 8px;
+  }
+  
+  .book_now_btn:hover {
+	color: #337ab7;
+	background: #f5f5f5;
+	border-color: #e5e5e5;
+  }
+  
+  .book_now_btn_black {
+	background: #242424;
+	color: #fff;
+	line-height: 40px;
+	display: inline-block;
+	padding: 0px 25px;
+	font-size: 14px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	letter-spacing: .28px;
+	position: relative;
+	z-index: 2;
+	-webkit-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	text-transform: uppercase;
+	text-align: center;
+	border: 2px solid #242424;
+  }
+  
+  .book_now_btn_black:hover {
+	color: #242424;
+	border-color: #242424;
+	background: transparent;
+  }
+  .main_slider_area .book_table_area {
+	margin: 0px;
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	z-index: 20;
+	top: 52%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	text-align: center;
+  }
+  
+  .main_slider_area .book_table_area .book_single_one {
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .60px;
+	display: inline-block;
+	position: relative;
+	z-index: 22;
+	margin-bottom: 15px;
+  }
+  
+  .main_slider_area .book_table_area .book_single_one:before {
+	content: "";
+	width: 52px;
+	height: 1px;
+	background: #fff;
+	position: absolute;
+	left: -72px;
+	bottom: 4px;
+	opacity: 1;
+	z-index: 22;
+  }
+  
+  .main_slider_area .book_table_area .book_single_one:after {
+	content: "";
+	width: 52px;
+	height: 1px;
+	background: #fff;
+	position: absolute;
+	right: -72px;
+	bottom: 4px;
+	opacity: 1;
+	z-index: 22;
+  }
+  
+  .main_slider_area .book_table_area .book_single_text {
+	text-align: center;
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	font-size: 50px;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	padding-bottom: 65px;
+  }
+  
+  .main_slider_area .book_table_area .book_table_inner {
+	margin-top: 0px !important;
+	background: rgba(0, 0, 0, 0.34);
+	border: 1px solid #524e54;
+  }
+  .explor_item .explor_text .explor_footer .pull-right .book_now_btn {
+	padding: 0px 13px;
+	/* border: 2px solid rgb(0 0 0 / 25%); */
+	line-height: 34px;
+  }
+  .error_area .error_inner_text_area .error_inner_text .book_now_btn {
+	line-height: 70px;
+	padding: 0px 40px;
+	font-size: 22.75px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	letter-spacing: .445px;
+  }
+
+/* Book Room Area css
+============================================================================================ */
+.book_room_area {
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	bottom: 0px;
+	z-index: 20;
+  }
+  
+  .book_room_box {
+	max-width: 370px;
+	background: #ffb606;
+	padding: 45px 35px 55px 35px;
+	float: right;
+	overflow: hidden;
+	width: 100%;
+  }
+  
+  .book_room_box .book_table_item {
+	margin-bottom: 20px;
+  }
+  
+  .book_room_box .book_table_item:last-child {
+	margin-bottom: 0px;
+	margin-top: 30px;
+  }
+  
+  .book_room_box .book_table_item h3 {
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+  }
+  
+  .book_room_box .book_table_item .input-append {
+	position: relative;
+  }
+  
+  .book_room_box .book_table_item .input-append input {
+	width: 100%;
+	height: 46px;
+	border: 1px solid #fff;
+	background: transparent;
+	padding: 0px 24px;
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+	text-transform: uppercase;
+  }
+  
+  .book_room_box .book_table_item .input-append input.placeholder {
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	text-transform: uppercase;
+  }
+  
+  .book_room_box .book_table_item .input-append input:-moz-placeholder {
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	text-transform: uppercase;
+  }
+  
+  .book_room_box .book_table_item .input-append input::-moz-placeholder {
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	text-transform: uppercase;
+  }
+  
+  .book_room_box .book_table_item .input-append input::-webkit-input-placeholder {
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	text-transform: uppercase;
+  }
+  
+  .book_room_box .book_table_item .input-append .add-on {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	right: 17px;
+  }
+  
+  .book_room_box .book_table_item .input-append .add-on i {
+	color: #fff;
+  }
+  
+  .book_room_box .book_table_item .bootstrap-select {
+	width: 100% !important;
+  }
+  
+  .book_room_box .book_table_item .bootstrap-select .dropdown-toggle {
+	padding: 0px 20px;
+	border-color: #fff;
+	border-radius: 0px;
+	height: 46px;
+	outline: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	background: transparent;
+  }
+  
+  .book_room_box .book_table_item .bootstrap-select .dropdown-toggle span {
+	font-size: 15px;
+	font-family: "Montserrat", sans-serif;
+	color: #fff;
+	font-weight: 500;
+	text-transform: uppercase;
+  }
+  
+  .book_room_box .book_table_item .bootstrap-select .dropdown-toggle .bs-caret .caret {
+	right: 20px;
+	color: #fff;
+  }
+  
+  .book_room_box .book_table_item .bootstrap-select .dropdown-menu {
+	margin: 0px;
+	padding: 0px;
+  }
+  
+  .book_room_box .book_table_item .bootstrap-select .dropdown-menu .dropdown-menu.inner li a {
+	line-height: 30px;
+  }
+  
+  .main_s_banner {
+	min-height: 100vh;
+	background: url(../img/home-slider/slider-2.jpg) no-repeat scroll center center;
+	background-size: cover;
+  }
+  
+  /* End Book Room Area css
+  ============================================================================================ */
+  /*---------------------------------------------------- */
+  /*----------------------------------------------------*/
+  /* Book Table Area css
+  ============================================================================================ */
+  .book_table_area {
+	margin-bottom: 100px;
+  }
+  
+  .book_table_inner {
+	background: #f5f5f5;
+	-webkit-box-shadow: 0px 3px 57px 0px rgba(0, 0, 0, 0.18);
+	box-shadow: 0px 3px 57px 0px rgba(0, 0, 0, 0.18);
+	clear: both;
+	padding: 35px 32px 35px 32px;
+	margin-top: -25px !important;
+	z-index: 20;
+	position: relative;
+  }
+  
+  .book_table_inner .book_table_item {
+	width: calc(100% / 5);
+	float: left;
+	padding-right: 15px;
+  }
+  
+  .book_table_inner .book_table_item .input-append {
+	position: relative;
+  }
+  
+  .book_table_inner .book_table_item .input-append input {
+	width: 100%;
+	border: none;
+	border: 1px solid #dedede;
+	height: 46px;
+	padding: 0px 18px;
+	font-size: 13px;
+	font-family: "Montserrat", sans-serif;
+	color: #8c8c8c;
+	/* text-transform: uppercase; */
+  }
+  
+  .book_table_inner .book_table_item .input-append input.placeholder {
+	font-size: 13px;
+	font-family: "Montserrat", sans-serif;
+	color: #8c8c8c;
+	text-transform: uppercase;
+  }
+  
+  .book_table_inner .book_table_item .input-append input:-moz-placeholder {
+	font-size: 13px;
+	font-family: "Montserrat", sans-serif;
+	color: #8c8c8c;
+	text-transform: uppercase;
+  }
+  
+  .book_table_inner .book_table_item .input-append input::-moz-placeholder {
+	font-size: 13px;
+	font-family: "Montserrat", sans-serif;
+	color: #8c8c8c;
+	text-transform: uppercase;
+  }
+  
+  .book_table_inner .book_table_item .input-append input::-webkit-input-placeholder {
+	font-size: 13px;
+	font-family: "Montserrat", sans-serif;
+	color: #8c8c8c;
+	text-transform: uppercase;
+  }
+  
+  .book_table_inner .book_table_item .input-append .add-on {
+	position: absolute;
+	right: 18px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+  }
+  
+  .book_table_inner .book_table_item:last-child {
+	padding-right: 0px;
+  }
+  
+  .book_table_inner .book_table_item .bootstrap-select {
+	width: 100% !important;
+  }
+  
+  .book_table_inner .book_table_item .bootstrap-select .dropdown-toggle {
+	padding: 0px 20px;
+	border-color: #dedede;
+	border-radius: 0px;
+	height: 46px;
+	outline: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	background: #fff;
+  }
+  
+  .book_table_inner .book_table_item .bootstrap-select .dropdown-toggle span {
+	font-size: 13px;
+	font-family: "Montserrat", sans-serif;
+	color: #8c8c8c;
+	text-transform: uppercase;
+  }
+  
+  .book_table_inner .book_table_item .bootstrap-select .dropdown-toggle .bs-caret .caret {
+	right: 20px;
+  }
+  
+  .book_table_inner .book_table_item .bootstrap-select .dropdown-menu {
+	margin: 0px;
+	padding: 0px;
+  }
+  
+  .book_table_inner .book_table_item .bootstrap-select .dropdown-menu .dropdown-menu.inner li a {
+	line-height: 30px;
+  }
+  
+  .book_table_inner .book_table_item .book_now_btn {
+	display: block;
+	text-align: center;
+	line-height: 42px;
+	padding: 0px 0px;
+  }
+  
+  /* End Book Table Area css
+  ============================================================================================ */
+  /* Search Right Side Area css
+============================================================================================ */
+.search_room_area {
+	padding: 100px 0px;
+  }
+  
+  .search_right_sidebar {
+	position: relative;
+	padding-left: 20px;
+  }
+  
+  .search_right_sidebar .book_room_area {
+	position: relative;
+  }
+  
+  .search_right_sidebar .book_room_area .book_room_box {
+	text-align: left;
+	background: transparent;
+	border: 1px solid #dcdcdc;
+  }
+  
+  .search_right_sidebar .book_room_area .book_room_box .book_table_item h3 {
+	text-align: left;
+	color: #242424;
+	font-size: 20px;
+  }
+  
+  .search_right_sidebar .book_room_area .book_room_box .book_table_item .input-append input {
+	border-color: #dedede;
+	color: #8c8c8c;
+	text-transform: uppercase;
+	font-size: 13px;
+  }
+  
+  .search_right_sidebar .book_room_area .book_room_box .book_table_item .input-append input.placeholder {
+	color: #8c8c8c;
+	text-transform: uppercase;
+	font-size: 13px;
+	opacity: 1;
+  }
+  
+  .search_right_sidebar .book_room_area .book_room_box .book_table_item .input-append input:-moz-placeholder {
+	color: #8c8c8c;
+	text-transform: uppercase;
+	font-size: 13px;
+	opacity: 1;
+  }
+  
+  .search_right_sidebar .book_room_area .book_room_box .book_table_item .input-append input::-moz-placeholder {
+	color: #8c8c8c;
+	text-transform: uppercase;
+	font-size: 13px;
+	opacity: 1;
+  }
+  
+  .search_right_sidebar .book_room_area .book_room_box .book_table_item .input-append input::-webkit-input-placeholder {
+	color: #8c8c8c;
+	text-transform: uppercase;
+	font-size: 13px;
+	opacity: 1;
+  }
+  
+  .search_right_sidebar .book_room_area .book_room_box .book_table_item .input-append .add-on i {
+	color: #8c8c8c;
+  }
+  
+  .search_right_sidebar .book_room_area .book_room_box .book_table_item .bootstrap-select .dropdown-toggle {
+	border-color: #dedede;
+  }
+  
+  .search_right_sidebar .book_room_area .book_room_box .book_table_item .bootstrap-select .dropdown-toggle span {
+	color: #8c8c8c;
+	font-size: 13px;
+  }
+  
+  .search_right_sidebar .book_room_area .book_room_box .book_table_item .book_now_btn {
+	line-height: 44px;
+  }
+  
+  .search_right_sidebar .book_now_button {
+	overflow: hidden;
+	clear: both;
+	margin: 0px 0px 50px 0px;
+	padding-top: 50px;
+  }
+  
+  .search_right_sidebar .book_now_button .book_now_btn_black {
+	display: block;
+	background: #3b3b3b;
+  }
+  
+  .search_right_sidebar .book_now_button .book_now_btn_black:hover {
+	background: transparent;
+  }
+  
+  .search_right_sidebar .your_book_box {
+	border: 1px solid #dcdcdc;
+	padding: 40px 0px 45px 18px;
+  }
+  
+  .search_right_sidebar .your_book_box h4 {
+	font-size: 20px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	color: #242424;
+	text-transform: uppercase;
+	letter-spacing: .60px;
+	padding-bottom: 15px;
+  }
+  
+  .search_right_sidebar .your_book_box h5 {
+	font-size: 15px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	color: #a0a0a0;
+	text-transform: uppercase;
+	letter-spacing: .45px;
+  }
+  
+  /* End Search Right Side Area css
