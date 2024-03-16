@@ -114,7 +114,59 @@
 	<div class="flex-captions container"><p></p></div>
 	</div><!-- /flexslider -->
 </div><!-- /slider -->
-	<center><div id="hweb-widget-search-container" data-domainname="uzungolyaylaotel.hweb.com" data-lang="tr" ></div></center>
+<section class="book_table_area">
+	<div class="container">
+		<form method="get" action="http://uzungol-yayla-otel.hmshotel.net/">
+			<div class="book_table_inner row m0">
+				<div class="book_table_item">
+					<div class="input-append ">
+						<input size="16" type="text"  readonly class="datepicker" autocomplete="off" name="arrival" data-date-format="dd.mm.yyyy" placeholder="Giriş Tarihi">
+						<span class="add-on">
+							<i class="fa fa-calendar" aria-hidden="true"></i>
+						</span>
+					</div>
+				</div>
+				<div class="book_table_item">
+
+					<div class="input-append ">
+						<input size="16" type="text" readonly autocomplete="off" class="datepicker" name="departure" data-date-format="dd.mm.yyyy" placeholder="Çıkış Tarihi">
+						<span class="add-on">
+							<i class="fa fa-calendar" aria-hidden="true"></i>
+						</span>
+					</div>
+
+				</div>
+				<div class="book_table_item">
+					<select class="selectpicker" name="adult">
+						<option value="1">Yetişkin 1</option>
+						<option value="2" selected>Yetişkin 2</option>
+						<option value="3">Yetişkin 3 </option>
+						<option value="4">Yetişkin 4 </option>
+						<option value="5">Yetişkin 5 </option>
+						
+					
+					</select>
+				</div>
+				<div class="book_table_item">
+					<select class="selectpicker" name="child">
+						<option value="0">Çocuk 0</option>
+						<option value="1">Çocuk 1</option>
+						<option value="2">Çocuk 2</option>
+						<option value="3">Çocuk 3 </option>
+						<option value="4">Çocuk 4 </option>
+						<option value="5">Çocuk 5 </option>
+						
+					</select>
+				</div>
+				<div class="book_table_item">
+
+					<button type="submit" class="book_now_btn" style="width: 100%;">Rezervasyon Yap</button>
+				</div>
+			</div>
+
+		</form>
+	</div>
+</section>
 <div id="main" class="container">
 	<article class="one-third block column alpha">
 		<a href="uzungol.html">
@@ -234,11 +286,14 @@
 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
 <script src="js/superfish.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="js/bootstrap-select.css"></script>
+<script src="js/bootstrap.min.css"></script>
 <script src="js/jquery-ui-1.8.21.custom.min.js"></script>
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAD0Z7Y-9dw5zNt6cEdVKVILHdt76ohqGs&sensor=false"></script>
 <script src="js/jquery.scripts.js"></script>
-<script type="text/javascript" src="https://uzungolyaylaotel.hweb.com/widget/widget-core.js" ></script>
-<script type="text/javascript" class="uzungolyaylaotel.hweb.com" src="https://uzungolyaylaotel.hweb.com/widget/hweb-search-pretty.js" ></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css" integrity="sha512-Fppbdpv9QhevzDE+UHmdxL4HoW8HantO+rC8oQB2hCofV+dWV2hePnP5SgiWR1Y1vbJeYONZfzQc5iII6sID2Q==" crossorigin="anonymous"/>
+
 
 <!--[if (gte IE 6)&(lte IE 8)]>
 	<script type="text/javascript" src="js/selectivizr-min.js"></script>
@@ -246,3 +301,64 @@
 
 </body>
 </html>
+<script type="text/javascript">
+    !function(a){a.fn.datepicker.dates.tr={days:["Pazar","Pazartesi","Salı","Çarşamba","Perşembe","Cuma","Cumartesi"],daysShort:["Pz","Pzt","Sal","Çrş","Prş","Cu","Cts"],daysMin:["Pz","Pzt","Sa","Çr","Pr","Cu","Ct"],months:["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"],monthsShort:["Oca","Şub","Mar","Nis","May","Haz","Tem","Ağu","Eyl","Eki","Kas","Ara"],today:"Bugün",clear:"Temizle",weekStart:1,format:"dd.mm.yyyy"}}(jQuery);
+
+    $(".datepicker").datepicker({
+        startDate: new Date(),
+        language: 'tr',
+        endDate: new Date(new Date().setDate(new Date().getDate() + 730)),
+        autoclose: true
+    });
+
+    function formatDate(dateObject) {
+        var d = new Date(dateObject);
+        var day = d.getDate();
+        var month = d.getMonth() + 1;
+        var year = d.getFullYear();
+        if (day < 10) {
+            day = "0" + day;
+        }
+        if (month < 10) {
+            month = "0" + month;
+        }
+        var date = day + "." + month + "." + year;
+        return date;
+    }
+
+
+
+    $('.datepicker').datepicker().on('changeDate', function(ev) {
+        var this_name = $(this).attr("name");
+        var this_val = $(this).val();
+        if (this_name === "arrival") {
+            var departure = $('[name=departure]');
+
+            if (this_val >= departure.val()) {
+                var parts = this_val.split(".");
+                var dt = new Date(parseInt(parts[2], 10),
+                    parseInt(parts[1], 10) - 1,
+                    parseInt(parts[0], 10));
+                dt.setDate(dt.getDate() + 1);
+                var dateval = formatDate(dt);
+                departure.val(dateval);
+                departure.datepicker('update');
+                departure.focus();
+
+            }
+        } else if (this_name === "departure") {
+            var arrival = $('[name=arrival]');
+            if (arrival.val() >= this_val) {
+                var parts = this_val.split(".");
+                var dt = new Date(parseInt(parts[2], 10),
+                    parseInt(parts[1], 10) - 1,
+                    parseInt(parts[0], 10));
+                dt.setDate(dt.getDate() - 1);
+                var dateval = formatDate(dt);
+                arrival.val(dateval);
+                arrival.datepicker('update');
+
+            }
+        }
+    });
+</script>
