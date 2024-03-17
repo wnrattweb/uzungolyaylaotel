@@ -24,6 +24,13 @@
 	<link rel="stylesheet" href="css/flexslider.css">
 	<link rel="stylesheet" href="css/responsive.css">
 
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/flatpickr.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+
+
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -111,83 +118,45 @@
 	    <li>
 	    	<img src="img/uzungol03.jpg" class="scale-with-grid" alt="Uzungol" />
 	    </li>
-	  </ul>
+	</ul>
 	<div class="flex-captions container"><p></p></div>
 	</div><!-- /flexslider -->
 </div><!-- /slider -->
 <!--booking-->
-<section class="welcome-booking">
-            
-	<div class="booking-tool style-over-carousel style-2">
-		
-		<div class="booking-step feature-checkin">
-
-			<div class="step-label">
-				<p><span>Check in</span></p>
-				<input type="date" class="booking-checkin" name="" value="" placeholder="">
-			</div>
-			
-		</div>
-
-		<div class="booking-step feature-checkout">
-
-			<div class="step-label">
-				<p><span>Check out</span></p>
-				<input type="date" class="booking-checkout" name="" value="" placeholder="">
-			</div>
-
-		</div>
-
-		<div class="booking-step feature-guests">
-
-			<div class="step-label">
-				<p><span>Guests</span></p>
-				<span><i class="adults-number">1</i> Adults, <i class="children-number">0</i> Children</span>
-			</div>
-
-			<div class="dropdowns">
-
-				<div class="item">
-
-					<span class="label">Adults</span>
-
-					<div class="quantity">
-
-						<span class="minus adults-number"></span>
-						<input type="text" name="booking-adults" value="1" readonly>
-						<span class="plus adults-number"></span>
-
-					</div>
-
-				</div>
-
-				<div class="item">
-
-					<span class="label">Children</span>
-
-					<div class="quantity">
-
-						<span class="minus children-number"></span>
-						<input type="text" name="booking-children" value="0" readonly>
-						<span class="plus children-number"></span>
-
-					</div>
-
-				</div>
-				
-			</div>
-			
-		</div>
-
-		<div class="booking-step feature-search">
-
-			<a href="http://uzungol-yayla-otel.hmshotel.net/" class="step-label">Check Availability</a>
-			
-		</div>
-
+<div class="checkout-form-section v2 wow slideInUp">
+	<div class="auto-container">
+	<div class="checkout-form">
+	<div class="checkout-field">
+	<h6>Check in</h6>
+	<div class="chk-field">
+	<input class="date-pick" type="text" placeholder="20 June, 2024" />
+	<i class="fa fa-calendar"></i>
 	</div>
-
-</section>
+	</div>
+	<div class="checkout-field">
+	<h6>Check out</h6>
+	<div class="chk-field">
+	<input class="date-pick" type="text" placeholder="23 June, 2024" />
+	<i class="fa fa-calendar"></i>
+	</div>
+	</div>
+	<div class="checkout-field br-0">
+	<h6>Room</h6>
+	<div class="chk-field">
+	<i class="fa fa-angle-down"></i>
+	<select>
+	<option>Standard Room Size </option>
+	<option>Standard Room Size </option>
+	<option>Standard Room Size </option>
+	<option>Standard Room Size </option>
+	</select>
+	</div>
+	</div>
+	<a href="http://uzungol-yayla-otel.hmshotel.net/" class="theme-btn btn-style-one"><span class="btn-title">check now</span></a>
+	</div>
+	</div>
+	</div>
+	
 <!--/booking-->
 <div id="main" class="container">
 	<article class="one-third block column alpha">
@@ -311,6 +280,12 @@
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAD0Z7Y-9dw5zNt6cEdVKVILHdt76ohqGs&sensor=false"></script>
 <script src="js/jquery.scripts.js"></script>
 
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/slick-animation.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/flatpickr.js"></script>
 
 <!--[if (gte IE 6)&(lte IE 8)]>
 	<script type="text/javascript" src="js/selectivizr-min.js"></script>
