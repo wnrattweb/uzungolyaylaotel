@@ -30,6 +30,8 @@
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css" integrity="sha512-Fppbdpv9QhevzDE+UHmdxL4HoW8HantO+rC8oQB2hCofV+dWV2hePnP5SgiWR1Y1vbJeYONZfzQc5iII6sID2Q==" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -159,7 +161,66 @@
 	</div><!-- /flexslider -->
 </div><!-- /slider -->
 <!--booking-->
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 col-sm-12 col-xs-12">
+			<div class="form-area">
+				<div class="form-title centered">Rezervasyon Yap</div>
+				<div class="form">
+					<form method="get" action="http://uzungol-yayla-otel.hmshotel.net/">
+						<div class="row">
+								
+								<div class="col-md-6 col-sm-12 col-xs-12">
+									<div class="single-input">
+										<i class="fa fa-calendar" aria-hidden="true"></i>
+										<input class="datepicker" type="text" autocomplete="off" readonly placeholder="Giriş Tarihi" name="arrival" data-date-format="dd.mm.yyyy" id="datepicker">
+									</div>
+								</div>
 
+								<div class="col-md-6 col-sm-12 col-xs-12">
+									<div class="single-input">
+										<i class="fa fa-calendar" aria-hidden="true"></i>
+										<input class="datepicker" type="text" autocomplete="off" readonly placeholder="Çıkış Tarihi" name="departure" data-date-format="dd.mm.yyyy" id="datepickerone">
+									</div>
+								 </div>
+
+								 <div class="col-md-6 col-sm-12 col-xs-12">
+									<div class="single-input">
+										<i class="fa fa-angle-down"></i>
+										<select class="custom-select-box" name="adult">
+											<option disabled="disabled">Yetişkin</option>
+											<option value="1">1</option>
+											<option value="2" selected>2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+										</select>
+									</div>
+								</div>
+								
+								<div class="col-md-6 col-sm-12 col-xs-12">
+									<div class="single-input">
+										<i class="fa fa-angle-down"></i>
+										<select class="custom-select-box" name="child">
+											<option selected="selected">Çocuk</option>
+											<option value="0"selected>0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+										</select>
+									</div>
+								</div>
+					
+						</div>
+						<button style="width: 100%;" type="submit" class="btn-one style-one"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Rezervasyon Yap</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <!--/booking-->
 <div id="main" class="container">
 	<article class="one-third block column alpha">
@@ -294,5 +355,122 @@
 	<script type="text/javascript" src="js/selectivizr-min.js"></script>
 <![endif]-->
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+(function () {
+    var options = {
+        whatsapp: "905464453807",
+        position: "right",
+    };
+    var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+    s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+    var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+})();
+</script>
+
 </body>
 </html>
+
+<script type="text/javascript">
+	!function(a){a.fn.datepicker.dates.tr={days:["Pazar","Pazartesi","Salı","Çarşamba","Perşembe","Cuma","Cumartesi"],daysShort:["Pz","Pzt","Sal","Çrş","Prş","Cu","Cts"],daysMin:["Pz","Pzt","Sa","Çr","Pr","Cu","Ct"],months:["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"],monthsShort:["Oca","Şub","Mar","Nis","May","Haz","Tem","Ağu","Eyl","Eki","Kas","Ara"],today:"Bugün",clear:"Temizle",weekStart:1,format:"dd.mm.yyyy"}}(jQuery);
+	
+		$(".datepicker").datepicker({
+			startDate: new Date(),
+			language: 'tr',
+			endDate: new Date(new Date().setDate(new Date().getDate() + 730)),
+			autoclose: true
+		});
+	
+		function formatDate(dateObject) {
+		var d = new Date(dateObject);
+		var day = d.getDate();
+		var month = d.getMonth() + 1;
+		var year = d.getFullYear();
+		if (day < 10) {
+		day = "0" + day;
+		}
+		if (month < 10) {
+		month = "0" + month;
+		}
+		var date = day + "." + month + "." + year;
+		return date;
+		}
+	
+	
+		$('.datepicker').datepicker().on('changeDate', function (ev) {
+		var this_name = $(this).attr("name");
+		var this_val = $(this).val();
+		if (this_name === "arrival") {
+		var departure = $('[name=departure]');
+	
+		if (this_val >= departure.val()) {
+		var parts = this_val.split(".");
+		var dt = new Date(parseInt(parts[2], 10), parseInt(parts[1], 10) - 1, parseInt(parts[0], 10));
+		dt.setDate(dt.getDate() + 1);
+		var dateval = formatDate(dt);
+		departure.val(dateval);
+		departure.datepicker('update');
+		departure.focus();
+	
+		}
+		} else if (this_name === "departure") {
+		var arrival = $('[name=arrival]');
+		if (arrival.val() >= this_val) {
+		var parts = this_val.split(".");
+		var dt = new Date(parseInt(parts[2], 10), parseInt(parts[1], 10) - 1, parseInt(parts[0], 10));
+		dt.setDate(dt.getDate() - 1);
+		var dateval = formatDate(dt);
+		arrival.val(dateval);
+		arrival.datepicker('update');
+	
+		}
+		}
+		});
+	
+	
+	
+	
+		$(document).ready(function() {
+	
+	
+	
+	$(window).on("resize", function(){
+	
+		const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+		const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+		
+		
+	   
+		if(vw <= 475){
+				$(".cp-title ").css(
+					{
+					 "font-size": "16px"
+					   
+					}
+				);
+	
+	
+				$(".sliderTitle").css(
+					{
+					 "font-size": "16px"
+					   
+					}
+				);
+	
+	
+	
+	
+		
+		
+		}
+	
+	   
+	});  
+	   
+				 
+	});  
+	
+	
+	</script>
